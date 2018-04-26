@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+body{
+    font-family: 'Dancing Script';
+    background-color: #02010a;
+}
+#contenido{
+    width: 900px;
+    margin: auto;
+}
+#header{
+    background-color:  #5b7989;
+    height: 20%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+    margin: auto;
+    margin-right: 10px;
+}
+#menu{
+    background-color: #5b7989;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+#title{
+    float: left;    
+    padding: 0px;
+    text-shadow: 0px 2px #02010a;
+    color: white;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-right: 10px;
+}
+#nav-list{
+    float: right;
+}
+#nav-list li a{
+    color: white;
+}
+#nav-list li{
+    list-style: none;
+    display: inline;
+}
+.selccionado{
+    text-decoration: none;
+}
+#imagencentral{
+    background-color: #82c3a6;
+    padding: 10px;
+}
+#imagencentral img{
+    width: 80%;
+    margin: auto;
+    display: block;
+    box-shadow: 2px 2px #02010a;
+}
+#imagensecundaria{
+    background-color: #d5c75f;
+    width: 100%;
+}
+#container{
+    display: block;
+    margin: auto;
+    display: flex;
+    flex: row;
+    width: 90%;
+}
+#container div{
+    margin: auto;
+    width: 40%;
+    padding: 20px;
+}
+#paisajes{
+    width: 100%;
+    box-shadow: 2px 2px #82c3a6;
+    border: 1px solid black;
+    transition: transform 1s;
+}
+#paisajes:hover{
+    transform: rotate(10deg);
+}
+#retratos{
+    width: 100%;
+    box-shadow: 2px 2px #82c3a6;
+    border: 1px solid black;
+    transition: transform 1s;
+}
+#retratos:hover{
+    transform: translate(20px,-5px);
+}
+#pie{
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex: row wrap;
+    background-color: #C6d5c5;
+    padding: 10px;
+}
+#pie div{
+    width: 40%;
+    padding: 5px;
+}
+@media screen and (max-width:900px){
+    #contenido{
+        width: 100%;
+        margin: auto;
+    }
+    #pie{
+        display: flex;
+        flex-direction: column;
+    }
+    #pie div{
+        width: 100%;
+        padding: 5px;
+    }
+    #container{
+        display: block;
+        display: flex;
+        flex-direction: column;
+    }
+    #container div{
+        margin: auto;
+        width: 90%;
+        padding: 10px;
+    }
+    #title{
+        width: 100%;
+        text-align: center;
+    }
+    #nav-list{
+        float: unset;
+        display: block;
+        margin: auto;
+        width: 30%;
+        padding-left: 0;
+    }
+    #nav-list li a{
+        text-align: center
+    }
+}
