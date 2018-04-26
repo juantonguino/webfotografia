@@ -101,6 +101,30 @@ body{
     width: 40%;
     padding: 5px;
 }
+/*
+    pagina paisajes
+*/
+#paisajescontainer{
+    background-color: #d5c75f;
+}
+#paisajescontainer div{
+    margin: auto;
+    display: block;
+    width: 95%;
+}
+#paisajescontainer div img{
+    width: 30%;
+    margin: 12px;
+}
+#imagenpaisaje1{
+    filter: blur(10px);
+}
+#paisajescontainer img:nth-child(even) {
+    filter: grayscale(100%);
+}
+#imagenpaisaje3{
+    filter: sepia(90%)
+}
 @media screen and (max-width:900px){
     #contenido{
         width: 100%;
@@ -137,5 +161,15 @@ body{
     }
     #nav-list li a{
         text-align: center
+    }
+    #paisajescontainer div{
+        margin: auto;
+        display: flex !important;
+        flex-direction: column;
+        width: 95%;    
+    }
+    #paisajescontainer div img{
+        width: 100% !important;
+        margin: 10px auto!important;
     }
 }
