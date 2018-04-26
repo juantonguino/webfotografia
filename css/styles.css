@@ -6,6 +6,8 @@ body{
 #contenido{
     width: 900px;
     margin: auto;
+    animation-name: move;
+    animation-duration: 1s;
 }
 #header{
     background-color:  #5b7989;
@@ -125,6 +127,19 @@ body{
 #imagenpaisaje3{
     filter: sepia(90%)
 }
+
+@keyframes move{
+    0%{
+        margin-top: 150%;
+    }
+    60%{
+        margin-top: -5%;
+    }
+    100%{
+        margin-top: 0%;
+    }
+}
+
 @media screen and (max-width:900px){
     #contenido{
         width: 100%;
